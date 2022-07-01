@@ -9,16 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #fff;
 }
-h1, h2, h3, a, p, nav, ul, li {
-  margin: 0;
-  padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-  text-decoration: none;
-}
 .header {
   position: relative;
   display: flex;
@@ -43,6 +33,7 @@ h1, h2, h3, a, p, nav, ul, li {
   display: flex;
   max-width: 730px;
   margin: 0 0 0 64px;
+  padding: 0;
   z-index: 2;
   align-items: center;
   font-size: 102px;
@@ -51,6 +42,8 @@ h1, h2, h3, a, p, nav, ul, li {
 }
 .header__subtitle {
   position: absolute;
+  margin: 0;
+  padding: 0;
   z-index: 2;
   max-width: 388px;
   left: 64px;
@@ -64,6 +57,7 @@ h1, h2, h3, a, p, nav, ul, li {
   text-decoration: none;
 }
 .header__link:hover {
+  opacity: 0.8;
   color: #2f80ed;
 }
 .header__main-illustration {
@@ -99,6 +93,8 @@ h1, h2, h3, a, p, nav, ul, li {
   justify-content: space-between;
 }
 .two-columns__brief {
+  margin: 0;
+  padding: 0;
   align-content: flex-start;
   width: 175px;
   line-height: 1.2;
@@ -115,7 +111,7 @@ h1, h2, h3, a, p, nav, ul, li {
 }
 .two-columns__paragraph {
   margin: 0;
-  padding-bottom: 30px;
+  padding: 0 0 30px;
   line-height: 34px;
   font-weight: normal;
   font-size: 24px;
@@ -134,6 +130,7 @@ h1, h2, h3, a, p, nav, ul, li {
  }
 .section-title {
   margin: 0 auto;
+  padding: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -142,7 +139,7 @@ h1, h2, h3, a, p, nav, ul, li {
   position: relative;
 }
 .section-subtitle {
-  padding-top: 20px;
+  padding: 20px 0 0;
   margin: 0 auto;
   line-height: 34px;
   font-size: 24px;
@@ -157,30 +154,33 @@ h1, h2, h3, a, p, nav, ul, li {
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
+  padding: 0;
   justify-content: space-between;
 }
 .table__cell {
   width: 250px;
-  margin-top: 60px;
+  margin: 60px 0 0;
+  padding: 0;
 }
 .table__heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+  padding: 0;
   text-align: left;
   line-height:1.15;
   font-size: 24px;
   font-weight: bold;
 }
 .table__text {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+  padding: 0;
   line-height:1.2;
   font-size: 18px;
   font-weight: normal;
   text-align: left;
 }
 .table__text:last-of-type {
-  margin-bottom: 20px;
+  margin: 0;
 }
 .feynman {
   position: relative;
@@ -190,7 +190,7 @@ h1, h2, h3, a, p, nav, ul, li {
 }
 .feynman__title {
   position: relative;
-  padding-top: 100px;
+  padding: 100px 0 0;
   max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -204,18 +204,23 @@ h1, h2, h3, a, p, nav, ul, li {
   font-size: 36px;
   font-weight: normal;
   margin: 70px auto 0;
+  padding: 0;
   z-index: 1;
 }
 .feynman__link {
   position: absolute;
-  right: 0;
+  margin: 0;
+  padding: 0;
+  right: 48px;
   top:50%;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none;
 }
 .feynman__link:hover {
+  opacity: 0.8;
   color: #2f80ed;
 }
 .feynman__img {
@@ -276,6 +281,7 @@ h1, h2, h3, a, p, nav, ul, li {
   right: -210px;
 }
 .footer {
+  display: flex ;
   background-color: #1f1f1f;
   min-height: 350px;
 }
@@ -304,6 +310,7 @@ h1, h2, h3, a, p, nav, ul, li {
   left: 0;
   bottom: 0;
   margin: 18px 0;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
 }
@@ -321,14 +328,17 @@ h1, h2, h3, a, p, nav, ul, li {
   display: flex;
   flex-direction: column;
   text-align: start;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+  padding: 0;
 }
 .footer__column-links {
-  margin-bottom: 16px;
+  margin: 0 0 16px;
   padding: 0;
   list-style-type: none;
 }
 .footer__column-link {
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -336,6 +346,7 @@ h1, h2, h3, a, p, nav, ul, li {
   color: #fff;
 }
 .footer__column-link:hover {
+  opacity: 0.8;
   color: #fff;
 }
 .footer__column_content_social {
@@ -343,6 +354,8 @@ h1, h2, h3, a, p, nav, ul, li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0;
+  padding: 0;
 }
 .footer__social-icon {
   width: 16px;
