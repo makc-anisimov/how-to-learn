@@ -1,3 +1,6 @@
+/* Сбрасываем стили по умолчанию */
+@import url(../vendor/normalize.css);
+
 /* Подключаем блок root */
 @import url(../blocks/root/root.css);
 
